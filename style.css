@@ -1,0 +1,212 @@
+* {
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+              box-sizing: border-box;
+}
+
+
+body {
+    font-family: monospace;
+}
+
+#fullform {
+    margin-top: 300px;
+    text-align: center;
+    z-index: +10;
+}
+
+#working {
+    display: none;
+    margin-top: 10px;
+}
+
+#error {
+    display: none;
+    margin-top: 10px;
+}
+
+#introtext {
+    margin: auto;
+}
+
+#inputform {
+    position: relative;
+}
+
+#inputtext {
+    display: none;
+    width: 30px;
+    margin: auto;
+    margin-top: 10%;
+    border: solid 1px #eeeeee;
+    -webkit-border-radius: 20px;
+       -moz-border-radius: 20px;
+         -o-border-radius: 20px;
+            border-radius: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#cancel {
+    color: #89cfeb;
+    visibility:hidden;
+    margin-top: 10px;
+    z-index: 10;
+}
+
+
+#results {
+    position: absolute;
+    top: 25px; 
+}
+
+.row {
+    z-index: -10;
+}
+
+.result-row {
+    margin-top: 2%;
+    position: relative;
+    top: 130px;
+    display: none;
+}
+
+.panel {
+    opacity: 0.5;
+    filter: alpha(opacity=50);   /* For IE8 and earlier */
+}
+
+.panel:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);  /* For IE8 and earlier */
+}
+
+/*********************************************************************************************************/
+/*setting #down arrow style and animation*/
+
+        @keyframes animationDown {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+        font-size: 24px;
+    }    
+    50% {
+        transform: translate3d(0px, 4px, 0px);
+        font-size: 28px;
+    }   
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+        font-size: 24px;
+    }
+}
+
+@-webrit-keyframes animationDown {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+        font-size: 24px;
+    }    
+    50% {
+        transform: translate3d(0px, 4px, 0px);
+        font-size: 28px;
+    }   
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+        font-size: 24px;
+    }
+}
+
+   @-moz-keyframes animationDown {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+        font-size: 24px;
+    }    
+    50% {
+        transform: translate3d(0px, 4px, 0px);
+        font-size: 28px;
+    }   
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+        font-size: 24px;
+    }
+}
+
+     @-o-keyframes animationDown {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+        font-size: 24px;
+    }    
+    50% {
+        transform: translate3d(0px, 4px, 0px);
+        font-size: 28px;
+    }   
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+        font-size: 24px;
+    }
+}
+
+
+#down:hover {
+            animation: animationDown 1s ease-in-out infinite;
+    -webkit-animation: animationDown 1s ease-in-out infinite;
+       -moz-animation: animationDown 1s ease-in-out infinite;
+         -o-animation: animationDown 1s ease-in-out infinite;
+}
+
+
+/*********************************************************************************************************/
+/*setting #random element style and animation*/
+
+#random {
+    color: #000000;
+    margin-left: 8px;    
+}
+
+        @keyframes animationRandom {
+    0% {color: #ff0000;}
+    12.5% {color: #ffa600;}
+    25% {color: #ffff00;}
+    37.5% {color: #008000;}
+    50% {color: #87ceeb;}
+    62.5% {color: #0000ff;}
+    75% {color: #8a2be2;}
+    100% {color: #ff0000;}
+}
+@-webkit-keyframes animationRandom {
+    0% {color: #ff0000;}
+    12.5% {color: #ffa600;}
+    25% {color: #ffff00;}
+    37.5% {color: #008000;}
+    50% {color: #87ceeb;}
+    62.5% {color: #0000ff;}
+    75% {color: #8a2be2;}
+    100% {color: #ff0000;}
+}
+   @-moz-keyframes animationRandom {
+    0% {color: #ff0000;}
+    12.5% {color: #ffa600;}
+    25% {color: #ffff00;}
+    37.5% {color: #008000;}
+    50% {color: #87ceeb;}
+    62.5% {color: #0000ff;}
+    75% {color: #8a2be2;}
+    100% {color: #ff0000;}
+}
+     @-o-keyframes animationRandom {
+    0% {color: #ff0000;}
+    12.5% {color: #ffa600;}
+    25% {color: #ffff00;}
+    37.5% {color: #008000;}
+    50% {color: #87ceeb;}
+    62.5% {color: #0000ff;}
+    75% {color: #8a2be2;}
+    100% {color: #ff0000;}
+}
+
+#random:hover {
+            animation: animationRandom 2s linear infinite;
+    -webkit-animation: animationRandom 2s linear infinite;
+       -moz-animation: animationRandom 2s linear infinite;
+         -o-animation: animationRandom 2s linear infinite;
+}
+
